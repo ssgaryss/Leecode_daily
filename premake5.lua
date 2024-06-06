@@ -34,3 +34,6 @@ project "Daily_Practice"
         "%{prj.name}/CXX20_Practice/**.cpp"
     }
     
+    filter "configurations:Debug"
+        runtime "Debug"
+        symbols "On"
