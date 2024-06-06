@@ -1,27 +1,65 @@
 #include <iostream>
 #include <vector>
-#include <ranges>
+#include <functional>
 #include <algorithm>
-#include <unordered_map>
+#include <set>
 using namespace std;
 
-auto _{ []() noexcept {
-	std::ios::sync_with_stdio(false);
-	std::cin.tie(nullptr); std::cout.tie(nullptr);
-	return 0;
-}() };
+// è¶…æ—¶
+// vector<int> resultArray(vector<int>& nums) {
+// 	int n = nums.size();
+// 	//std::function<int(const vector<int>&, int)> greatCount = [](const vector<int>& arr, int val) {
+// 	//	int count = 0;
+// 	//	for (const auto& i : arr) {
+// 	//		if (i > val) count++;
+// 	//	}
+// 	//	return count;
+// 	//	};
+// 	vector<int> arr1, arr2;
+// 	arr1.reserve(n);
+// 	arr2.reserve(n);
+// 	arr1.emplace_back(nums[0]);
+// 	arr2.emplace_back(nums[1]);
+
+// 	std::set<int> set1(arr1.begin(), arr1.end());
+// 	std::set<int> set2(arr2.begin(), arr2.end()); 
+// 	for (auto it = nums.begin() + 2; it != nums.end(); ++it) {
+// 		int num1 = std::distance(set1.upper_bound(*it), set1.end());
+// 		int num2 = std::distance(set2.upper_bound(*it), set2.end());
+// 		if (num1 > num2) {
+// 			arr1.emplace_back(*it);
+// 			set1.insert(*it);
+// 		}
+// 		else if (num1 < num2) {
+// 			arr2.emplace_back(*it);
+// 			set2.insert(*it);
+// 		}
+// 		else if (num1 == num2) {
+// 			if (arr1.size() <= arr2.size()) {
+// 				arr1.emplace_back(*it);
+// 				set1.insert(*it);
+// 			}
+// 			else {
+// 				arr2.emplace_back(*it);
+// 				set2.insert(*it);
+// 			}
+// 		}
+// 	}
+// 	std::copy(arr2.begin(), arr2.end(), std::back_inserter(arr1));
+// 	return arr1;
+// }
 
 class BinaryIndexTree {
 public:
 	BinaryIndexTree(int n)
-		: m_Tree(n + 1) {} //ÒòÎªÌâÄ¿ÏÂ±ê´Ó1µ½n
+		: m_Tree(n + 1) {} //å› ä¸ºé¢˜ç›®ä¸‹æ ‡ä»1åˆ°n
 	int lowbit(int x) {
 		return x & (-x);
 	}
 	void add(int i) {
 		while (i < m_Tree.size())
 		{
-			m_Tree[i]++; //´Ë´¦Ö»ÓÃÓÚ¼ÆÊı
+			m_Tree[i]++; //æ­¤å¤„åªç”¨äºè®¡æ•°
 			i += lowbit(i);
 		}
 	}
@@ -42,16 +80,16 @@ vector<int> resultArray(vector<int>& nums) {
 	int n = nums.size();
 	vector<int> SortNums = nums;
 	std::ranges::sort(SortNums);
-	unordered_map<int, int> Index; //¼ÇÂ¼ÅÅĞòºóµÄnums[i]ÔÚSortNumsÖĞµÄindex£¬<nums[i], index>
+	unordered_map<int, int> Index; //è®°å½•æ’åºåçš„nums[i]åœ¨SortNumsä¸­çš„indexï¼Œ<nums[i], index>
 	for (int i = 0; i < n; ++i) {
-		Index[SortNums[i]] = i + 1; //ÈôÏàµÈindex¼ÇÂ¼×î´óÖµ£¬ÒòÎªĞèÒªÇóÑÏ¸ñ´óÓÚ
+		Index[SortNums[i]] = i + 1; //è‹¥ç›¸ç­‰indexè®°å½•æœ€å¤§å€¼ï¼Œå› ä¸ºéœ€è¦æ±‚ä¸¥æ ¼å¤§äº
 	}
 
 	vector<int> arr1;
 	vector<int> arr2;
 	arr1.emplace_back(nums[0]);
 	arr2.emplace_back(nums[1]);
-	//tree ÓÃÓÚ¼ÇÂ¼¶ÔÓ¦SortNumsÖĞ¶ÔÓ¦indexÒÔÇ°µÄËùÒÔÕûÊı¸öÊıºÍ£¬¼´get(index)µÄÖµ
+	//tree ç”¨äºè®°å½•å¯¹åº”SortNumsä¸­å¯¹åº”indexä»¥å‰çš„æ‰€ä»¥æ•´æ•°ä¸ªæ•°å’Œï¼Œå³get(index)çš„å€¼
 	BinaryIndexTree tree1(n);
 	BinaryIndexTree tree2(n);
 	tree1.add(Index[nums[0]]);
@@ -84,9 +122,10 @@ vector<int> resultArray(vector<int>& nums) {
 }
 
 int main() {
-	std::vector<int> nums{ 5,14,3,1,2 };
-	std::vector<int>result = resultArray(nums);
+	vector<int> nums{ 5,14,3,1,2 };
+	vector<int> result = resultArray(nums);
 	std::copy(result.begin(), result.end(), std::ostream_iterator<int>(cout, " "));
 }
 
-//Ê÷×´Êı×é£¡£¡£¡£¡£¡£¡lowbit£¨x£©= x & £¨-x£©= x & £¨~x + 1£©
+
+//æ ‘çŠ¶æ•°ç»„ï¼ï¼ï¼ï¼ï¼ï¼lowbitï¼ˆxï¼‰= x & ï¼ˆ-xï¼‰= x & ï¼ˆ~x + 1ï¼‰
