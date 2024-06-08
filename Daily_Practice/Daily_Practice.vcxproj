@@ -8,6 +8,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CXX20_Practice\container.cpp" />
+    <ClCompile Include="Leecode\3040.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{8209195C-6ED7-0C62-576B-7D8843D8E8C6}</ProjectGuid>
