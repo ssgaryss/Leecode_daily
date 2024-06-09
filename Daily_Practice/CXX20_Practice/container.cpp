@@ -7,6 +7,9 @@
 #include <stack>
 
 #include <map>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
 
 int main() {
 	std::list<int> list1 = { 1, 2, 3, 4, 5 };
@@ -55,4 +58,9 @@ int main() {
 	std::cout << "datamap have 1 : " << (bool)datamap.count(1) << "\n";
 	std::cout << "map2 have 1 : " << (bool)map2.count(1) << "\n";
 	std::cout << std::noboolalpha;
+
+	std::unordered_map<int, std::string> unmap;
+	using namespace std::literals::string_literals;
+	unmap[1] = "hello"s;
+	std::cout << "number : " << 1 << "  bucket : " << unmap.bucket(1); //·µ»ØÍ°
 }
