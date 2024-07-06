@@ -6,6 +6,7 @@ void counter(int id, int numIterations) {
 	for (int i = 0; i < numIterations; ++i) {
 		std::cout << std::format("Counter {0} has value {1}", id, i) << "\n";
 	}
+	std::this_thread::sleep_for(std::chrono::seconds(5));
 }
 
 int main() {
@@ -31,7 +32,7 @@ int main() {
 	std::cout << std::format("Main thread continues while other threads_2 are running...") << std::endl;
 	for (int i = 0; i < num_threads; ++i) {
 		threads_2[i].detach(); // 主线程调用join()等待所有threads线程执行完成，在所有threads执行完之前主线程被阻塞！
-		std::cout << "Thread " << i << " joined." << std::endl;
+		std::cout << "Thread " << i + 3 << " detached." << std::endl;
 	}
 
 	std::this_thread::sleep_for(std::chrono::seconds(5)); // 等待一段时间观察线程执行情况,若不等待会报错
