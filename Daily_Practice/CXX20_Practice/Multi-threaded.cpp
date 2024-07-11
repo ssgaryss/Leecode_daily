@@ -1,6 +1,7 @@
 #include <iostream>
 #include <thread>
 #include <format>
+#include <iomanip>
 #include <mutex>
 #include <syncstream> //方式2 同步流
 
@@ -40,8 +41,11 @@ int main() {
 	std::cout << std::format("Main thread continues while other threads_2 are running...") << std::endl;
 	for (int i = 0; i < num_threads; ++i) {
 		threads_2[i].detach(); // 主线程调用join()等待所有threads线程执行完成，在所有threads执行完之前主线程被阻塞！
-		std::lock_guard Lock{ s_Mutex };
+		std::unique_lock Lock{ s_Mutex }; //unique_lock!!!
+		std::cout << std::boolalpha << "Unique lock has lock before unlock ？ " << Lock.owns_lock() << "\n";
 		std::cout << "Thread " << i + 3 << " detached." << std::endl;
+		Lock.unlock(); // lock_guard没有该方法，lock_guard只是销毁时自动释放，不能显示释放，而unique_lock可以
+		std::cout << std::boolalpha << "Unique lock has lock after unlock ? " << Lock.owns_lock() << "\n";
 	}
 
 	std::cout << std::endl;
