@@ -1,2 +1,2 @@
 # Leecode_daily
-Leecode daily practice
+LeetCode daily practice
