@@ -1,0 +1,43 @@
+https://www.bilibili.com/read/cv10547329/
+编辑模式下:设置控制柄 v 
+                 隐藏部分点 h 反之alt+h
+	填充面：f 分割成三角形的填充面：alt+f
+	连接点：j
+	反转面朝向：shift+n
+	*合并点（merge）：m
+	内插面 i
+	边倒角 ctrl+b  点倒角 shift+ctrl+b
+	环切 ctrl+r
+	挤出e 选择挤出方式alt+e  边线折痕：shift+e（边的锐度）
+	边循环选择 alt+左键   
+	继续边循环上一圈和下一圈 ctrl + + 反之ctrl + -
+	反选物体：ctrl+i
+	划开：k
+	断离/拆分/分离：V/Y/P(断离是对于点的，拆分面后二者仍然属于同一物体，而分离面则为两个物体)
+	法向缩放：alt+s
+	*沿着相邻线滑动：g+g
+	指定值的旋转/平移/缩放：g/s/r + x/y/z + 数字
+物体模式下：插入关键帧：i
+	转换模式 ctrl+tab
+	打开或关闭snap：shift+tab
+	parent操作：ctrl+p  解除parent：alt + p
+	四视图：ctrl+alt+q
+	三视图选项：`(esc下面)
+	聚焦到物体：/
+	应用于：ctrl+a（比如scale后并非真是尺寸而是scale变换了，若要改变尺寸需要apply）
+	随意移动摄相机：点开摄像机（快捷键：0）+shift+`
+	自动贴合（snapping mode）：g+b
+	操作游标和选中项 shift+s （移动游标：shift+右键）
+	视图着色方式：z
+	ctrl+数字（加subdivision 数字代表视图模式细分段数）
+	独显（只显示当前物体）：？
+	透视：shift+z
+	*关联：ctrl+L
+雕刻模式下：遮罩操作：m 反向ctrl+i 清楚alt+m
+物体模式下：选中物体移动到collection：m
+纹理绘制下：isolate view：/
+动画模式下：graphic editor模式下：整体曲线视角：home键
+			     任意缩放：ctrl+中键
+	（动画输出也输出图片，否则crash等会造成所有视频丢失，而图片可以保留之前部分）
+	（渲染前检查是否场景有问题，如面朝向等，*可以视频序列中抽取第一帧、最后一帧、中间几帧先进行渲染并检查，而非直接开始渲染，而且最好个一小段时间再检查更容易发现问题）
+姿态模式下：位移/旋转回复原位：alt+g/r
