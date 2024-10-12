@@ -1,2 +1,2 @@
-desktop_files filter=lfs diff=lfs merge=lfs -text
+desktop_files/** filter=lfs diff=lfs merge=lfs -text
 Papers/** filter=lfs diff=lfs merge=lfs -text
