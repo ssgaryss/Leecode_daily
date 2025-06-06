@@ -7,20 +7,27 @@ using namespace std;
 
 string smallestEquivalentString(string s1, string s2, string baseStr) {
     vector<int> parent(26);
-    for (int i = 0; i < 26; ++i) parent[i] = i;
+
+    for (int i = 0; i < 26; ++i) 
+        parent[i] = i;
 
     // Find with path compression
     function<int(int)> find = [&](int x) {
         return parent[x] == x ? x : parent[x] = find(parent[x]);
         };
 
-    // Union£º½«Á½¸ö¼¯ºÏºÏ²¢£¬±£Ö¤×ÖµäĞòĞ¡µÄÎª´ú±í
+    // Unionï¼šå°†ä¸¤ä¸ªé›†åˆåˆå¹¶ï¼Œä¿è¯å­—å…¸åºå°çš„ä¸ºä»£è¡¨
     auto unite = [&](int x, int y) {
         int px = find(x);
         int py = find(y);
-        if (px == py) return;
-        if (px < py) parent[py] = px;
-        else parent[px] = py;
+
+        if (px == py) 
+            return;
+        if (px < py) 
+            parent[py] = px;
+        else 
+            parent[px] = py;
+
         };
 
     for (int i = 0; i < s1.size(); ++i) {
@@ -28,7 +35,7 @@ string smallestEquivalentString(string s1, string s2, string baseStr) {
     }
 
     for (char& c : baseStr) {
-        c = find(c - 'a') + 'a'; // ×ª»»ÎªµÈ¼ÛÀàµÄ×îĞ¡´ú±í×Ö·û
+        c = find(c - 'a') + 'a'; // è½¬æ¢ä¸ºç­‰ä»·ç±»çš„æœ€å°ä»£è¡¨å­—ç¬¦
     }
 
     return baseStr;
