@@ -1,2 +1,2 @@
 # Leecode_daily
-LeetCode daily practice
+Daily LeetCode problem-solving to prepare for job interviews.
