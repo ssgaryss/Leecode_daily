@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="CXX20_Practice">
+      <UniqueIdentifier>{C4D353B8-B0A1-47BE-9935-B8E485A22323}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Leecode">
+      <UniqueIdentifier>{1688FED0-8267-7D6C-8B7F-0843F7DDE3CD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CXX20_Practice\Macros.cpp">
+      <Filter>CXX20_Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="CXX20_Practice\MoveSemantic.cpp">
+      <Filter>CXX20_Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="CXX20_Practice\Multi-threaded.cpp">
+      <Filter>CXX20_Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="CXX20_Practice\Random.cpp">
+      <Filter>CXX20_Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="CXX20_Practice\STL.cpp">
+      <Filter>CXX20_Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="CXX20_Practice\chapter_1_main.cpp">
+      <Filter>CXX20_Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="CXX20_Practice\container.cpp">
+      <Filter>CXX20_Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="CXX20_Practice\exception.cpp">
+      <Filter>CXX20_Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="CXX20_Practice\forward.cpp">
+      <Filter>CXX20_Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="CXX20_Practice\io.cpp">
+      <Filter>CXX20_Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="CXX20_Practice\iterator.cpp">
+      <Filter>CXX20_Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="CXX20_Practice\lamda.cpp">
+      <Filter>CXX20_Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="CXX20_Practice\operator.cpp">
+      <Filter>CXX20_Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="CXX20_Practice\quick_sort.cpp">
+      <Filter>CXX20_Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="CXX20_Practice\range.cpp">
+      <Filter>CXX20_Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="CXX20_Practice\std_algorithm.cpp">
+      <Filter>CXX20_Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="CXX20_Practice\unique_ptr.cpp">
+      <Filter>CXX20_Practice</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1007.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1014.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1035.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1061.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1103.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1128.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1184.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1186.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1227.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1298.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\134.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\135.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1353.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1394.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1436.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1450.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1463.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1535.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1542.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1553.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1673.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1738.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1845.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1870.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1884.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1931.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1953.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\1958.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2016.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2024.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2028.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2073.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2101.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2105.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2181.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2187.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2207.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2225.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2244.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2288.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2306.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2332.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2374.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2376.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2390.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2391.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2414.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2434.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2444.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2516.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2535.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2552.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2555.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2566.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2576.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2589.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2616.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2663.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2708.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2710.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2713.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2740.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2748.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2766.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2779.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2786.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2806.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2813.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2831.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2844.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2848.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2850.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2860.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2903.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2928.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2929.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2938.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2940.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2956.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2959.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2961.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2962.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2965.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2970.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2972.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2974.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\2981.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3011.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3033.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3038.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3040.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3067.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3072.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3096.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3098.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3099.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3101.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3102.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3106.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3111.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3112.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3117.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\312.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3127.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3128.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3129.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3130.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3131.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3132.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3133.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3137.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3142.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3143.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3144.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3146.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3148.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3151.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3152.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3153.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3154.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3158.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3162.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3164.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3170.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3174.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3175.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3176.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3177.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3184.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3185.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3191.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3192.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3194.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3200.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3211.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3304.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3307.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3403.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\3423.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\386.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\40.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\419.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\440.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\494.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\503.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\520.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\521&522.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\551.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\552.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\572.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\600.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\61.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\676.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\682.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\690.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\698.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\699.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\721.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\724.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\741.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\75.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\807.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\815.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\826.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\838.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\881.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\887.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\908.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\910.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\977.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\994.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+    <ClCompile Include="Leecode\997.cpp">
+      <Filter>Leecode</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
