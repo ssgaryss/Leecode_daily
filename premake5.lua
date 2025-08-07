@@ -22,17 +22,26 @@ project "Daily_Practice"
     {
         "%{prj.name}/Leecode/**.h",
         "%{prj.name}/Leecode/**.cpp",
+        "%{prj.name}/interview/**.h",
+        "%{prj.name}/interview/**.cpp",
         "%{prj.name}/CXX20_Practice/**.h",
         "%{prj.name}/CXX20_Practice/**.cpp"
     }
 
-    removefiles
-    {
-        "%{prj.name}/Leecode/**.h",
-        "%{prj.name}/Leecode/**.cpp",
-        "%{prj.name}/CXX20_Practice/**.h",
-        "%{prj.name}/CXX20_Practice/**.cpp"
-    }
+    filter { "action:vs*" }
+        removefiles {
+            "%{prj.name}/Leecode/**.h",
+            "%{prj.name}/Leecode/**.cpp",
+            "%{prj.name}/interview/**.h",
+            "%{prj.name}/interview/**.cpp",
+            "%{prj.name}/CXX20_Practice/**.h",
+            "%{prj.name}/CXX20_Practice/**.cpp",
+        }
+    filter {}
+
+    filter { "action:xcode4", "files:**.cpp" }
+        flags { "ExcludeFromBuild" }
+    filter {}
     
     filter "configurations:Debug"
         runtime "Debug"
