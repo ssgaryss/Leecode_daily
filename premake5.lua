@@ -40,6 +40,7 @@ project "Daily_Practice"
     -- Visual Studio Setting
     filter { "action:vs*" }
         removefiles { "**.cpp" }
+        buildoptions{ "/utf-8" }
     filter {}
 
     -- XCode Setting
